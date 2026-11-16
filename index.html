@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Laboratório acessível de óptica e aquecimento solar de piscinas.">
+
+  <title>Sol + Água | O caminho da energia</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header>
+    <a class="brand" href="#inicio">☀ Sol <span>+ Água</span></a>
+
+    <nav aria-label="Principal">
+      <a href="#ciencia">A ciência</a>
+      <a href="#laboratorio">Laboratório</a>
+      <a href="#piscina">A piscina</a>
+      <a href="#automacao">Automação</a>
+      <a href="#acesso">Acessibilidade</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div>
+        <p class="eyebrow">
+          PROJETO INTEGRADOR · ÓPTICA + TECNOLOGIA
+        </p>
+
+        <h1>
+          A luz chega.<br>
+          A energia <em>se transforma.</em>
+        </h1>
+
+        <p>
+          Do espectro solar à água aquecida: explore como os materiais
+          absorvem, refletem e transmitem radiação.
+        </p>
+
+        <a class="button" href="#laboratorio">
+          Explorar o laboratório ↗
+        </a>
+      </div>
+
+      <div
+        class="solar"
+        role="img"
+        aria-label="Sol irradiando sobre uma piscina. Parte da energia
+        é refletida, parte atravessa a cobertura e é absorvida pela
+        água e pelo fundo."
+      >
+        <span class="sun">☀</span>
+        <div class="rays">↘ ↓ ↙</div>
+        <div class="cover">COBERTURA TRANSPARENTE</div>
+        <div class="water">
+          ↗ reflexão<br>
+          ↓ transmissão<br><br>
+          ≋ ≋ ≋ ≋ ≋<br>
+          absorção → energia térmica
+        </div>
+      </div>
+    </section>
+
+    <section id="ciencia">
+      <p class="eyebrow">01 / ENTENDER</p>
+      <h2>Uma radiação. Três destinos.</h2>
+
+      <p>
+        Ao atingir um material, a energia incidente se divide.
+        Para uma mesma faixa espectral e condição de incidência,
+        <strong>α + ρ + τ = 1</strong>:
+        absortância + refletância + transmitância.
+        São frações de energia, sem unidade.
+      </p>
+
+      <div class="grid">
+        <article>
+          <span class="number">α</span>
+          <h3>Absorção</h3>
+          <p>
+            A energia é transferida ao material. Parte pode aumentar
+            sua energia interna e sua temperatura. É o que buscamos
+            na superfície de um coletor solar térmico.
+          </p>
+        </article>
+
+        <article>
+          <span class="number">ρ</span>
+          <h3>Reflexão</h3>
+          <p>
+            A radiação retorna ao meio de origem. Na reflexão
+            especular, o ângulo refletido é igual ao incidente,
+            medidos a partir da normal. Superfícies rugosas
+            espalham a luz em várias direções.
+          </p>
+        </article>
+
+        <article>
+          <span class="number">τ</span>
+          <h3>Transmissão</h3>
+          <p>
+            A radiação atravessa o material. Pode sofrer refração
+            ao mudar de meio. Uma cobertura pode transmitir luz
+            visível e se comportar de outra forma no infravermelho.
+          </p>
+        </article>
+      </div>
+
+      <details>
+        <summary>
+          Por que superfícies escuras tendem a absorver mais luz visível?
+        </summary>
+        <p>
+          Elas refletem menos luz visível para nossos olhos.
+          Em um material opaco, τ ≈ 0; assim, menor reflexão implica
+          maior absorção. A cor visível sozinha não determina a
+          absorção de todo o espectro solar nem a emissão térmica:
+          composição, acabamento e comprimento de onda também importam.
+        </p>
+      </details>
+
+      <details>
+        <summary>Absorver é o mesmo que refletir?</summary>
+        <p>
+          Não. Na absorção, a energia fica no material e pode virar
+          energia térmica. Na reflexão, ela volta ao ambiente.
+          Um espelho pode direcionar energia para um coletor,
+          mas não cria energia adicional.
+        </p>
+      </details>
+
+      <h3>Ligação com o nosso estudo da luz</h3>
+
+      <div class="grid">
+        <article>
+          <h3>Refração e dispersão</h3>
+          <p>
+            Refração é a mudança de velocidade de propagação ao
+            entrar em outro meio; pode haver desvio, exceto na
+            incidência normal. Pela lei de Snell:
+            n₁ sen θ₁ = n₂ sen θ₂.
+          </p>
+          <p>
+            A dispersão ocorre porque o índice depende do comprimento
+            de onda, separando cores num prisma.
+          </p>
+          <a href="https://renandecker-non.github.io/A-Dispers-o-da-Luz-por-refra-o/">
+            Visitar o projeto de dispersão ↗
+          </a>
+        </article>
+
+        <article>
+          <h3>E a difração?</h3>
+          <p>
+            É o espalhamento de ondas em aberturas ou obstáculos,
+            marcante quando suas dimensões se aproximam do
+            comprimento de onda.
+          </p>
+          <p>
+            Não é o mesmo fenômeno que dispersão. Em coletores e
+            piscinas comuns, absorção, reflexão e transmissão são
+            mais diretamente relevantes para o balanço solar.
+          </p>
+        </article>
+
+        <article>
+          <h3>Da óptica ao calor</h3>
+          <p>
+            A radiação solar inclui ultravioleta, visível e
+            infravermelho. A água absorve de forma diferente em
+            cada faixa; parte da luz alcança o fundo.
+          </p>
+          <p>
+            O coletor converte energia radiante em calor e
+            transfere calor para a água.
+          </p>
+          <a href="https://renandecker-non.github.io/Aquecimento-Solar-de-Piscina-com-ptica-Aplicada/index.html">
+            Visitar o projeto da piscina ↗
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="laboratorio" class="tinted">
+      <p class="eyebrow">02 / EXPERIMENTAR</p>
+      <h2>Para onde vai a energia?</h2>
+
+      <p>
+        Selecione um material e altere as frações. Os valores iniciais
+        são exemplos inventados para ensino, não medições nem
+        especificações de produtos.
+      </p>
+
+      <div class="split">
+        <div>
+          <label for="material">Exemplo de superfície</label>
+          <select id="material">
+            <option value="escuro">Coletor escuro opaco</option>
+            <option value="claro">Superfície clara opaca</option>
+            <option value="transparente">Cobertura transparente</option>
+          </select>
+
+          <label for="abs">
+            Absorção (%)
+            <output id="absV"></output>
+          </label>
+          <input id="abs" type="range" min="0" max="100" value="90">
+
+          <label for="ref">
+            Reflexão (%)
+            <output id="refV"></output>
+          </label>
+          <input id="ref" type="range" min="0" max="10" value="10">
+
+          <label for="irr">
+            Irradiância (W/m²)
+            <output id="irrV"></output>
+          </label>
+          <input id="irr" type="range"
+                 min="0" max="1100" step="50" value="800">
+
+          <p>
+            A reflexão fica limitada à energia restante;
+            a transmissão é calculada automaticamente.
+          </p>
+        </div>
+
+        <div>
+          <div id="bars" class="bars"></div>
+          <div id="energy" role="status" aria-live="polite"></div>
+
+          <p>
+            Modelo de uma superfície de 1 m²: P = G × A.
+            Os coeficientes representam uma média didática para a
+            radiação incidente; não descrevem sua dependência
+            espectral ou angular.
+          </p>
+        </div>
+      </div>
+
+      <h3>Compare os exemplos</h3>
+
+      <div class="tablewrap">
+        <table>
+          <caption>Frações ilustrativas de energia incidente</caption>
+          <thead>
+            <tr>
+              <th scope="col">Material</th>
+              <th scope="col">Absorção</th>
+              <th scope="col">Reflexão</th>
+              <th scope="col">Transmissão</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Escuro opaco</th>
+              <td>90%</td>
+              <td>10%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <th scope="row">Claro opaco</th>
+              <td>25%</td>
+              <td>75%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <th scope="row">Transparente</th>
+              <td>10%</td>
+              <td>10%</td>
+              <td>80%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="piscina">
+      <p class="eyebrow">03 / APLICAR</p>
+      <h2>Uma cobertura ajuda a aquecer?</h2>
+
+      <p>
+        <strong>
+          Pode ajudar, sobretudo por reduzir a evaporação e a perda de calor.
+        </strong>
+        Uma cobertura transparente permite a entrada de parte da
+        radiação. O ganho líquido depende da transmissão solar e
+        da redução das perdas. A cobertura também pode reduzir
+        a energia que entra.
+      </p>
+
+      <div class="split">
+        <div>
+          <label for="volume">Volume da piscina (L)</label>
+          <input id="volume" type="number"
+                 min="1000" max="1000000" step="1000" value="20000">
+
+          <label for="area">Área da superfície (m²)</label>
+          <input id="area" type="number"
+                 min="1" max="1000" value="20">
+
+          <label for="hours">Tempo de sol constante (h)</label>
+          <input id="hours" type="number"
+                 min="0" max="12" step="0.5" value="4">
+
+          <label for="sunlight">Irradiância (W/m²)</label>
+          <input id="sunlight" type="number"
+                 min="0" max="1100" value="800">
+
+          <button id="calculate" class="button">
+            Comparar cenários
+          </button>
+          <p id="error" role="alert"></p>
+        </div>
+
+        <div>
+          <div id="poolResult" role="status" aria-live="polite"></div>
+
+          <details open>
+            <summary>Fórmulas e limites do modelo</summary>
+            <p>
+              Psolar = G × A × τ × 0,80.<br>
+              Plíquida = Psolar − qperdas × A.<br>
+              ΔT = Plíquida × t × 3600 / (V × 4186).
+            </p>
+            <p>
+              Usamos massa ≈ V em kg, calor específico
+              4186 J/(kg·°C), absorção efetiva de 80% na água e no fundo.
+              Sem cobertura: τ = 1 e perdas = 250 W/m².
+              Com cobertura: τ = 0,80 e perdas = 60 W/m².
+              Perdas são hipóteses constantes, sem ajuste ao clima.
+            </p>
+            <p>
+              Não inclui coletor externo, chuva, vento variável,
+              sombra, reposição de água ou mudanças das perdas
+              com a temperatura. ΔT negativo representa resfriamento.
+              Não prevê a temperatura real da piscina do CEP
+              nem dimensiona equipamentos.
+            </p>
+          </details>
+        </div>
+      </div>
+
+      <h3>Investigue na prática</h3>
+      <p>
+        Compare recipientes iguais, com o mesmo volume e temperatura
+        inicial: um sem cobertura e outro com filme transparente.
+        Registre temperatura, tempo, vento e massa antes e depois.
+        Repita o experimento e compare a perda de água.
+        Use termômetros; evite vidro exposto e lentes que concentrem luz.
+      </p>
+    </section>
+
+    <section id="automacao" class="tinted">
+      <p class="eyebrow">04 / CRIAR</p>
+      <h2>Automação que responde ao calor.</h2>
+
+      <p>
+        Proposta de protótipo: dois sensores medem coletor e piscina;
+        um controlador aciona a circulação quando há calor útil
+        disponível. A histerese evita ligar e desligar repetidamente.
+      </p>
+
+      <div class="split">
+        <div>
+          <label for="collector">Coletor (°C)</label>
+          <input id="collector" type="number"
+                 min="0" max="100" value="35">
+
+          <label for="poolTemp">Piscina (°C)</label>
+          <input id="poolTemp" type="number"
+                 min="0" max="60" value="26">
+
+          <label for="target">Meta (°C)</label>
+          <input id="target" type="number"
+                 min="20" max="35" value="28">
+
+          <button id="control" class="button">
+            Atualizar controlador
+          </button>
+        </div>
+
+        <div id="controllerState" role="status" aria-live="polite"></div>
+      </div>
+
+      <p>
+        Liga com diferença ≥ 4 °C; desliga com diferença ≤ 2 °C
+        ou ao atingir a meta. Entre 2 e 4 °C, mantém o estado anterior.
+        Valores inválidos desligam a simulação.
+      </p>
+
+      <p>
+        <strong>Impacto social:</strong>
+        registrar temperaturas e consumo permite avaliar economia
+        sem prometer resultados não medidos. Sensores de baixo custo,
+        documentação aberta e conteúdo acessível ajudam a comunidade
+        a reproduzir e discutir o projeto.
+        A bomba consome eletricidade; energia solar não significa
+        impacto ambiental nulo.
+      </p>
+
+      <p>
+        Esta interface simula decisões e não controla equipamentos.
+        Um sistema real precisa de proteção elétrica e hidráulica,
+        verificação de fluxo, limites térmicos e instalação profissional.
+        Coberturas devem ser removidas para uso da piscina e
+        exigem procedimentos de segurança.
+      </p>
+    </section>
+
+    <section id="acesso">
+      <p class="eyebrow">05 / INCLUIR</p>
+      <h2>Ciência para mais pessoas.</h2>
+
+      <div class="toolbar" aria-label="Ajustes de leitura">
+        <button id="contrast" aria-pressed="false">Alto contraste</button>
+        <button id="reading" aria-pressed="false">Leitura facilitada</button>
+        <button id="font">Aumentar fonte</button>
+        <button id="reset">Restaurar leitura</button>
+      </div>
+
+      <p>
+        Use Tab para navegar, Enter para ativar e as setas nos
+        seletores deslizantes. Os gráficos também têm resultados
+        em texto. O modo de leitura usa fonte sem serifa e
+        espaçamento maior; não é garantia de melhor leitura para
+        toda pessoa com dislexia.
+      </p>
+
+      <h3>Libras</h3>
+      <p>
+        Ative o tradutor VLibras pelo botão abaixo.
+        Ele depende de internet e do serviço externo.
+        A tradução automática é um apoio e não substitui vídeos
+        revisados por pessoas fluentes em Libras.
+      </p>
+
+      <button id="loadLibras">Ativar VLibras</button>
+      <p id="librasStatus" role="status"></p>
+
+      <div class="video-slot">
+        <h3>Espaço preparado para vídeo em Libras</h3>
+        <p>
+          Vídeo ainda não disponível. A equipe poderá inserir
+          uma gravação com intérprete, legendas e transcrição.
+          Roteiro sugerido: os três destinos da radiação;
+          efeito da cobertura; uso dos simuladores.
+          O conteúdo equivalente em português está nas seções acima.
+        </p>
+      </div>
+    </section>
+
+    <section id="fontes">
+      <h2>Fontes para aprofundar</h2>
+      <ul>
+        <li>
+          <a href="https://openstax.org/books/microbiology/pages/2-1-the-properties-of-light">
+            OpenStax — propriedades da luz
+          </a>
+        </li>
+        <li>
+          <a href="https://openstax.org/books/physics/pages/16-1-reflection">
+            OpenStax — reflexão e refração
+          </a>
+        </li>
+        <li>
+          <a href="https://www.epa.gov/watersense/pool-water-efficiency">
+            EPA WaterSense — coberturas e conservação de água
+          </a>
+        </li>
+      </ul>
+      <p>
+        Coeficientes e perdas dos simuladores são hipóteses
+        didáticas, não valores retirados dessas fontes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>☀ Sol + Água</strong>
+    <p>Óptica, sustentabilidade e inclusão · Projeto educacional</p>
+
+    <nav aria-label="Mapa do site">
+      <a href="#inicio">Início</a>
+      <a href="#ciencia">Ciência</a>
+      <a href="#laboratorio">Laboratório</a>
+      <a href="#piscina">Piscina</a>
+      <a href="#automacao">Automação</a>
+      <a href="#acesso">Acessibilidade</a>
+      <a href="#fontes">Fontes</a>
+    </nav>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+</body>
+</html>
